@@ -1,0 +1,8 @@
+{
+  "name": "node-token-jwt",
+  "main": "orders.js",
+  "dependencies": {
+    "json2csv": "^3.11.5",
+    "request": "^2.83.0"
+  }
+}

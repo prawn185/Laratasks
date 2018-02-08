@@ -1,0 +1,49 @@
+body { 
+    margin:0;
+    padding:0;
+    background-image: url(' http://sf.co.ua/2012/wallpaper-1918258.jpg ');
+    background-size: center center;
+    width: 100%;
+    height: 100%;
+}
+
+#intro{
+    text-align: center;
+    margin-top:200px;
+}
+
+.content{
+    text-align: center;
+    margin-top: -20px;
+}
+
+p{
+    font-family:Abel;
+    font-size: 40px;
+    color:white; 
+}
+
+#txt{
+    margin-bottom:-40px;
+}
+
+#btn{
+    font-size:25px;
+    margin-top: -30px;
+    font-family: abel;
+    border: 2px solid lightblue;
+    display: table;
+    margin:0 auto;
+    padding: 3px 4px;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: lightblue;
+}
+
