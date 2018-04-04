@@ -31,14 +31,14 @@ class AddTagsToTasks extends Migration
     }
 }
 
-
-$query = "SELECT description FROM posts";
-
-$executequery = mysql_query($query);
-
-$desc = mysql_fetch_row($executequery);
-foreach($executequery as $row){
-    echo $row['id'];
-}
+//
+//$query = "SELECT description FROM posts";
+//
+//$executequery = mysql_query($query);
+//
+//$desc = mysql_fetch_row($executequery);
+//foreach($executequery as $row){
+//    echo $row['id'];
+//}
 
 

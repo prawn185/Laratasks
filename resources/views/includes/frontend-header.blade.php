@@ -18,8 +18,9 @@
                 </ul>
 
 
-
+                @if (Auth::check()) {
                 <a href="{{route('login')}}" id="logout">Log In</a>
+                @endif
             </div>
         </nav>
     </div>

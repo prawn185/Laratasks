@@ -29,6 +29,7 @@ class taskSeeder extends Seeder
                 'customer_id'     => 1,
                 'created_by'     => 1,
                 'updated_by'     => 1,
+                'tag'           => "",
 //                'user_id'     => $i,
 
             ]);

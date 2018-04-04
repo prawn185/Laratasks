@@ -56,7 +56,7 @@
 
                         <div class="mu-app-download-area">
                             {{--<a class="mu-apple-btn" disabled="disabled" href="#"><i class="fa fa-computer"></i><span>Download 0.3 (Pre-Alpha)</span></a>--}}
-                            <a class="mu-apple-btn" href="/login"><i class="fa fa-computer"></i><span>Try me! (Pre-Alpha)</span></a>
+                            <a class="mu-apple-btn" href="/dashboard"><i class="fa fa-computer"></i><span>Try me! (Pre-Alpha)</span></a>
                             <h4>
                                 </br>
                                 User: test@laratasks.co.uk</br>
