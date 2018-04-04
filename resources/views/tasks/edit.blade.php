@@ -14,7 +14,7 @@
                     </div>
                     <div class="col-lg-3">
                         {{Form::label('tag', 'Add a Tag') }}
-                        {{Form::select('tag',['Bug' => 'Bug','Feature' => 'Feature','Duplicate'=>'Duplicate','Question'=>'Question','None'=>'None'], "None" ,['class' => 'form-control'])}}
+                        {{Form::select('tag',['Bug' => 'Bug','Feature' => 'Feature','Duplicate'=>'Duplicate','Question'=>'Question','None'=>'None'], $task->tag ,['class' => 'form-control'])}}
                     </div>
                 </div>
             </div>

@@ -13,17 +13,17 @@ class DashboardController extends Controller
         $task = Task::where('assignedTo', Auth::id())->where('status', '!=', 'Completed')->orderBy('created_at', 'desc')->with('notes')->first();
 
 
-        $tasks = Task::where('assignedTo', Auth::id())->where('status', '!=', 'Completed')->get();
+        $tasks = Task::where('assignedTo', Auth::id())->where('status', '!=', 'Completed')->with('priority')->get();
+        $total_time = 0;
+        $high_tasks = 0;
         foreach ($tasks as $task){
 
-            $total_time = $task->total_time;
-            $high_tasks = $task->total_time;
-
+            if($task->priority == "High" || $task->priority == "Critical"){
+                $high_tasks++;
+            }
+            $total_time = $task->total_time + $total_time;
         }
-//        Add up all  task and output in hours
-//        Count high/critical tasks
 
-
-        return view('pages/admin')->withTasks('tasks');
+        return view('pages/admin')->with('total_time', $total_time)->with('high_tasks', $high_tasks);
     }
 }
