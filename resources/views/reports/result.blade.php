@@ -39,40 +39,43 @@
             {{Form::submit('Submit',['class' => 'btn btn-success float-right'])}}
             {{Form::close()}}
         </div>
-    <div class="report-search-form">
-        <div class="row">
-            <div class="col-lg-12">
+        <div class="report-search-form">
+            <div class="row">
+                <div class="col-lg-12">
 
 
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="row">
-                            <div class="col-lg-9">Allocated Time:</div>
-                            <div class="col-lg-3">{{$allocated_time}}</div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="col-lg-9">Allocated Time:</div>
+                                <div class="col-lg-3">{{$allocated_time}}</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="row">
-                            <div class="col-lg-9">Total Used Time:</div>
-                            <div class="col-lg-3">{{$used_time}}</div>
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="col-lg-9">Total Used Time:</div>
+                                <div class="col-lg-3">{{$used_time}}</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="row">
-                            <div class="col-lg-9">Total Number of Tasks:</div>
-                            <div class="col-lg-3">{{$total_tasks}}</div>
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="col-lg-9">Total Number of Tasks:</div>
+                                <div class="col-lg-3">{{$total_tasks}}</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="row">
-                            <div class="col-lg-9">Allocated Time:</div>
-                            <div class="col-lg-3">{{$allocated_time}}</div>
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="col-lg-9">Allocated Time:</div>
+                                <div class="col-lg-3">{{$allocated_time}}</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            @if($customer != "" && $start != "" && $end != "")
+                <a href="{{ url('reports/invoice/'.$customer.'/'.$start.'/'.$end) }}"> <div class="btn btn-invoice float-left" style="background-color: #1b7bff;color:white">Invoice</div></a>
+            @endif
         </div>
-    </div>
     </div>
 
 

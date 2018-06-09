@@ -73,13 +73,11 @@ Route::group(['middleware' => ['auth']], function () {
 
 //    Any Profile
     Route::get('profile/create', 'ProfileController@viewCreateProfile')->name('viewCreateProfile');
+
+
     Route::get('profile/{id}', 'ProfileController@viewProfile');
 
-
-
     Route::get('profile/edit/{id}', 'ProfileController@viewEditProfile');
-
-
 
     Route::post('profile/edit/{id?}', 'ProfileController@editProfile');
 
@@ -105,4 +103,6 @@ Route::group(['middleware' => ['auth']], function () {
     });
     Route::post('reports', 'ReportController@search');
     Route::post('reports/result', 'ReportController@search');
+
+    Route::get('reports/invoice/{customer_id}/{start}/{end}', 'ReportController@invoice');
 });

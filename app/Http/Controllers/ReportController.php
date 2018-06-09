@@ -27,10 +27,11 @@ class ReportController extends Controller
                 $query->where('customer_id', '=', $customer);
             }else{
                 $query->where('customer_id', '!=', 0);
+                $customer = "";
             }
             if ( ! empty($start) && ! empty($end)) {
                 $query->where('created_at', '>=', $start)
-                      ->where('created_at', '<=', $end);
+                    ->where('created_at', '<=', $end);
             }
         })->get();
 
@@ -41,8 +42,43 @@ class ReportController extends Controller
             $allocated_time += $task->total_time;
         }
 
-        return view('reports.result')->with('tasks', $tasks)->with('allocated_time', $allocated_time)->with('used_time', $used_time)->with('total_tasks', count($tasks));
+        return view('reports.result')
+            ->with('tasks', $tasks)
+            ->with('allocated_time', $allocated_time)
+            ->with('used_time', $used_time)
+            ->with('total_tasks', count($tasks))
+            ->with('customer',$customer)
+            ->with('start',$start)
+            ->with('end',$end);
 
     }
+    function invoice($customer_id, $start, $end){
+
+//        var_dump($customer_id);
+//        var_dump($start);
+//        dd($end);
+
+        // 2
+
+        $tasks = Task::where('customer_id', '=', $customer_id)
+            ->where('created_at', '>=', $start)
+            ->where('created_at', '<=', $end)
+            ->get();
+//        dd($tasks);
+// Customer name
+//        Task titles
+//        Time against tasks
+//        Total Time
+
+//        Sub total
+//        total price
+
+
+
+        return view('reports.invoice')
+            ->with('tasks', $tasks)
+            ->with('customer', $customer_id);
+    }
+
 
 }

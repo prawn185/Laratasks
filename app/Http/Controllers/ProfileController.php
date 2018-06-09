@@ -13,18 +13,6 @@ class ProfileController extends Controller
 
         return view('profile.create');
     }
-    function viewMyProfile()
-    {
-        $data = User::find(Auth::id());
-
-        $tasks_completed = Task\Task::where('assignedTo', Auth::id())->where('status','Completed')->count();
-
-        $tasks_created = Task\Task::where('created_by', Auth::id())->count();;
-
-        $tasks_assigned_to = Task\Task::where('assignedTo', $data->id)->where('status','Open')->count();
-
-        return view('profile.view')->with('user', $data)->with('created', $tasks_created)->with('completed', $tasks_completed)->with('assigned_to', $tasks_assigned_to);
-    }
     function viewAllProfiles(){
 
         $data = User::all();

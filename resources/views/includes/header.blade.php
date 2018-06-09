@@ -21,7 +21,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Profiles</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="{{ url('myprofile') }}">My Profile</a>
+                        <a class="dropdown-item" href="{{ url('profile', Auth::id()) }}">My Profile</a>
                         <a class="dropdown-item" href="{{ url('profiles') }}">All profiles</a>
                         <a class="dropdown-item" href="{{ url('profile/create') }}">Create New Profile</a>
                     </div>
