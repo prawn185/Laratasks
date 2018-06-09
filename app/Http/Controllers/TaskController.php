@@ -51,8 +51,7 @@ class TaskController extends Controller
     function viewSingleTask($id)
     {
 
-        $data = Task\Task::find($id)->with('priority')->first();
-
+        $data = Task\Task::find($id);
 
         return view('tasks.view')->with('task', $data);
     }
