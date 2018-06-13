@@ -4,11 +4,7 @@ var interval = setInterval(timestamphome, 1000);
 function timestamphome(){
     var date;
     date = new Date();
-
-
     var time = document.getElementById('timediv');
-
-
     time.innerHTML = date.toLocaleTimeString();
 
 
@@ -21,7 +17,7 @@ function showNotes($i) {
 
 
 $('#changeTaskList').on('change', function(){
-    window.location = ("/public/tasks/"+$(this).val());
+    window.location = ("tasks/"+$(this).val());
 });
 
 

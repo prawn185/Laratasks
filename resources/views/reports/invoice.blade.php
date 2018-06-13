@@ -8,13 +8,33 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1>Invoice for: {{$customer}}</h1>
+                <h1>Invoice for: {{$customer->name}}</h1>
+
             </div>
         </div>
+        @foreach($tasks as $task)
 
-{{$tasks}}
+                <div class="row">
+                    <div class="col-10">{{$task->title}}</div>
+                    <div class="col-2">{{$task->time_used}}</div>
+                </div>
 
+        @endforeach
+
+
+        <div class="row">
+            <div class="col-10"><h5>Total Time:</h5></div>
+            <div class="col-2"><h5>{{$time}}</h5></div>
+        </div>
+        <div class="row">
+            <div class="col-10"><h4>Total Price:</h4></div>
+            <div class="col-2"><h4>£{{$cost}}</h4></div>
+        </div>
+        <a href="#" onclick="window.print();"><div class="btn btn-invoice">Print</div></a>
+        {{--<a href="{{ url('reports/invoice/') }}"><div class="btn btn-invoice">Email</div></a>--}}
     </div>
+
+
 
 
 @endsection

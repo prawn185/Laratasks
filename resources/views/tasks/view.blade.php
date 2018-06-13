@@ -11,11 +11,12 @@
                             <h3>{{$task->title}}</h3>
                             <div class="task-buttons">
                                 <h6><a href="{{URL::to('tasks')}}">Task List</a></h6>
-                                <h6><a href="{{URL::to('tasks/view', $task->id)}}">Edit Task</a></h6>
+                                <h6><a href="{{URL::to('tasks/edit', $task->id)}}">Edit Task</a></h6>
                                 <h6><a href="">Complete Task</a></h6>
                             </div>
                             <div class="task-details">
                                 <h6>Status: {{$task->status}}</h6>
+                                <h6>Due Date: {{$task->duedate}}</h6>
                                 <h6>Priority: {{$task->priority}}</h6>
                                 <h6>Assigned To: {{$task->assignedTo}}</h6>
                                 <h6>Assigned By: {{$task->assignedBy}}</h6>

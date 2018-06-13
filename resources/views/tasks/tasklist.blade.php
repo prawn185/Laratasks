@@ -1,5 +1,6 @@
 @extends('layouts.admin')
 @section('content')
+
     <div class="container">
         <div class="row">
             <div class="col">
@@ -50,6 +51,7 @@
                                 <div class="col-lg-3">
                                     <div class="task-details">
                                         <h6 style="background-color:{{priorityColors($task->priority)}} ">Priority: {{$task->priority}}</h6>
+                                        <h6>Due Date: {{$task->duedate}}</h6>
                                         <h6>Status: {{$task->status}}</h6>
                                         <h6>Customer: {{ \App\Models\Customer::find($task->customer_id)['name']}}</h6>
                                         <h6>Assigned To: {{app\User::find($task->assignedTo)['name']}}</h6>

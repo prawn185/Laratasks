@@ -6,6 +6,7 @@ use App\Models\Task;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Carbon\Carbon;
 
 class ProfileController extends Controller
 {
@@ -29,7 +30,12 @@ class ProfileController extends Controller
 
         $tasks_assigned_to = Task\Task::where('assignedTo', $data->id)->where('status','Open')->count();
 
-        return view('profile.view')->with('user', $data)->with('created', $tasks_created)->with('completed', $tasks_completed)->with('assigned_to', $tasks_assigned_to);
+
+        $loyalty = Carbon::today()->diffInDays($data->created_at) ;
+        if($loyalty > 30){
+            $loyalty = $loyalty / 30;
+        }
+        return view('profile.view')->with('user', $data)->with('created', $tasks_created)->with('completed', $tasks_completed)->with('assigned_to', $tasks_assigned_to)->with('loyalty', $loyalty);
     }
 
     function viewEditProfile($id){

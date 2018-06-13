@@ -1,7 +1,7 @@
 
 <section class="footer">
         <h5>Created by Shaun Moore</h5>
-        <h5>Version 0.7</h5>
+        <h5>Version 0.4</h5>
         <h5> <a href="https://laratasks.co.uk">Laratasks.co.uk</a></h5>
 </section>
 

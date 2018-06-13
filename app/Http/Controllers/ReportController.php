@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Task\Task;
 use Illuminate\Http\Request;
+use App\Models\Customer;
 
 class ReportController extends Controller
 {
@@ -54,30 +55,23 @@ class ReportController extends Controller
     }
     function invoice($customer_id, $start, $end){
 
-//        var_dump($customer_id);
-//        var_dump($start);
-//        dd($end);
-
-        // 2
-
         $tasks = Task::where('customer_id', '=', $customer_id)
             ->where('created_at', '>=', $start)
             ->where('created_at', '<=', $end)
             ->get();
-//        dd($tasks);
-// Customer name
-//        Task titles
-//        Time against tasks
-//        Total Time
 
-//        Sub total
-//        total price
+        $time = 0;
+        foreach($tasks as $task){$time = $task->time_used + $time;}
 
+        $customer = Customer::find($customer_id);
 
+        $cost = $time / 60 * $customer->billing_rate;
 
         return view('reports.invoice')
             ->with('tasks', $tasks)
-            ->with('customer', $customer_id);
+            ->with('customer', $customer)
+            ->with('time', $time)
+            ->with('cost', $cost);
     }
 
 

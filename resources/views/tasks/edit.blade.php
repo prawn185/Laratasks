@@ -11,11 +11,14 @@
                         {{Form::text('title', $task->title, ['class' => 'form-control']) }}
                     </div>
                     <div class="col-lg-3">
-                    </div>
-                    <div class="col-lg-3">
                         {{Form::label('tag', 'Add a Tag') }}
                         {{Form::select('tag',['Bug' => 'Bug','Feature' => 'Feature','Duplicate'=>'Duplicate','Question'=>'Question','None'=>'None'], $task->tag ,['class' => 'form-control'])}}
                     </div>
+                    <div class="col-lg-3">
+                        {{Form::label('duedate', 'Due Date') }}
+                        {{Form::text('duedate', $task->duedate, ['class' => 'form-control flatpickr flatpickr-input active','id'=>'datepicker','placeholder'=>'Select Due Date...','readonly'=>'readonly']) }}
+                    </div>
+
                 </div>
             </div>
             <div class="form-group">

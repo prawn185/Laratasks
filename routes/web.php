@@ -44,7 +44,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('tasks/create', 'TaskController@createTaskPost');
     Route::get('tasks/completed', 'TaskController@viewCompletedTasks');
     Route::get('tasks/completed', 'TaskController@viewCompletedTasks');
-    Route::get('tasks/{id}', 'TaskController@viewAnotherTaskList');
+    Route::get('tasks/{id}', 'TaskController@viewTaskList');
     Route::get('tasks/view/{id}', 'TaskController@viewSingleTask');
 
 //    Create Task

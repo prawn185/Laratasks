@@ -1304,3 +1304,159 @@ img{
 	
 }
 
+#mu-pricing {
+	background-color: #fff;
+	float: left;
+	padding: 0 0;
+	display: inline;
+	width: 100%;
+}
+
+.mu-pricing-area {
+	display: inline;
+	float: left;
+	text-align: center;
+	width: 100%;
+}
+
+.mu-pricing-area h2 {
+	color: #333;
+}
+
+.mu-title-content {
+	padding: 0 10%;
+}
+
+.mu-pricing-content {
+	display: inline;
+	float: left;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.mu-pricing-table {
+	display: table;
+	width: 100%;
+}
+
+.mu-pricing-table > li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 15px;
+	width: 24%;
+	vertical-align: middle;
+}
+
+.mu-pricing-table > li.mu-standard-pricing {
+	width: 32%;
+}
+
+.mu-pricing-single {
+	display: inline;
+	float: left;
+	text-align: center;
+	padding: 20px 0;
+	width: 100%;
+	box-shadow: 0px 0px 14px #ededed;
+	border-radius: 5px;
+}
+
+.mu-pricing-single-icon {
+	display: inline;
+	float: left;
+	width: 100%;
+	padding-bottom: 30px;
+}
+
+.mu-pricing-single-icon span {
+	color: #ff5a60;
+	font-size: 60px;
+}
+
+.mu-pricing-single-title {
+	background-color: #ff5a60;
+	color: #fff;
+	display: inline;
+	float: left;
+	padding: 15px 0;
+	width: 100%;
+}
+
+.mu-pricing-single-title h3 {
+	font-size: 24px;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.mu-pricing-single-content {
+	display: inline;
+	float: left;
+	padding: 35px 0 15px;
+	width: 100%;
+}
+
+.mu-pricing-single-content ul {}
+
+.mu-pricing-single-content ul li {
+	color: #666666;
+	font-size: 14px;
+	list-style: none;
+	line-height: 1.7;
+}
+
+.mu-single-pricebox {
+	display: inline;
+	float: left;
+	padding: 5px 0 25px;
+	width: 100%;
+}
+
+.mu-single-pricebox h4 {
+	color: #ff5a60;
+	font-size: 48px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.mu-single-pricebox h4 > span {
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.mu-buy-now-btn {
+	background-color: #ff5a60;
+	border-radius: 20px;
+	color: #fff;
+	display: inline-block;
+	font-size: 18px;
+	padding: 10px 50px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.mu-buy-now-btn:hover,
+.mu-buy-now-btn:focus {
+	color: #fff;
+}
+
+.mu-standard-pricing .mu-pricing-single {
+	padding: 25px 50px;
+}
+
+.mu-standard-pricing .mu-pricing-single-content {
+	padding: 50px 0 40px;
+}
+
+.mu-standard-pricing .mu-single-pricebox {;
+	padding: 5px 0 40px;
+}
+
+.mu-standard-pricing .mu-buy-now-btn {
+	background-color: #ff5a60;
+	border-radius: 20px;
+	color: #fff;
+	display: inline-block;
+	font-size: 18px;
+	padding: 8px 48px;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+}

@@ -55,8 +55,8 @@
                         <p>LaraTasks is a small project with an endless possibility, created by one person and available to everyone.</p>
 
                         <div class="mu-app-download-area">
-                            {{--<a class="mu-apple-btn" disabled="disabled" href="#"><i class="fa fa-computer"></i><span>Download</span></a>--}}
-                            <a class="mu-apple-btn" href="/dashboard"><i class="fa fa-computer"></i><span>Try me! (Beta 0.7)</span></a>
+                            
+                            <a class="mu-apple-btn" href="/dashboard"><i class="fa fa-computer"></i><span>Try me! (Pre-Alpha)</span></a>
                             <h4>
                                 </br>
                                 User: test@laratasks.co.uk</br>
@@ -88,7 +88,7 @@
                         <div class="mu-title-area">
                             <h2 class="mu-title">OUR SOFTWARE FEATURES</h2>
                             <span class="mu-title-dot"></span>
-                            {{--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis unde, ut sapiente et voluptatum facilis consectetur incidunt provident asperiores at necessitatibus nulla sequi voluptas libero quasi explicabo veritatis minima porro.</p>--}}
+                            
                         </div>
 
                         <div class="mu-feature-content">
@@ -108,7 +108,7 @@
                                                 </button>
                                             </div>
                                             <div class="media-body">
-                                                <h3 class="media-heading">Task Management</h3>
+                                                <h3 class="media-heading">Responsive Design</h3>
                                             </div>
                                         </div>
 
@@ -119,7 +119,7 @@
                                                 </button>
                                             </div>
                                             <div class="media-body">
-                                                <h3 class="media-heading">Time Tracking</h3>
+                                                <h3 class="media-heading"> 8 hour day or 40 hour week? Maybe 4:40 hours a day? No issue!</h3>
                                             </div>
                                         </div>
 
@@ -131,6 +131,7 @@
                                             </div>
                                             <div class="media-body">
                                                 <h3 class="media-heading">Excellent Performance, built in Laravel, built to last</h3>
+                                                <p>I've built this in Laravel 5.5 and wont stop updating it!</p>
                                             </div>
                                         </div>
 
@@ -141,7 +142,7 @@
                                                 </button>
                                             </div>
                                             <div class="media-body">
-                                                <h3 class="media-heading">AI Task Sorting</h3>
+                                                <h3 class="media-heading">Want to know how long it will take to get home?</h3>
                                             </div>
                                         </div>
 
@@ -155,7 +156,7 @@
             </div>
         </div>
     </section>
-<?php /*
+    <?php /*
     <section id="mu-faq">
         <div class="container">
             <div class="row">
@@ -257,101 +258,6 @@
         </div>
     </section>
     */?>
-
-    <section id="mu-pricing">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="mu-pricing-area">
-                        <!-- Title -->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="mu-title">
-                                    <h2>Our Pricing Table</h2>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="mu-pricing-content">
-                                    <ul class="mu-pricing-table">
-                                        <li>
-                                            <div class="mu-pricing-single">
-                                                <div class="mu-pricing-single-icon">
-                                                    <span class="fa fa-user"></span>
-                                                </div>
-                                                <div class="mu-pricing-single-title">
-                                                    <h3>Self-Hosted</h3>
-                                                </div>
-                                                <div class="mu-pricing-single-content">
-                                                    <ul>
-                                                        <li>Host on your own server</li>
-                                                        <li>24/7 Support</li>
-                                                        <li>Easily moved to cloud</li>
-                                                        <li> Customisable/No Branding</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="mu-single-pricebox">
-                                                    <h4>£79.99</h4>
-                                                </div>
-                                                <a class="mu-buy-now-btn" href="mailto:shaun@laratasks.co.uk">Buy now</a>
-                                            </div>
-                                        </li>
-                                        <li class="mu-standard-pricing">
-                                            <div class="mu-pricing-single">
-                                                <div class="mu-pricing-single-icon">
-                                                    <span class="fa fa-cloud"></span>
-                                                </div>
-                                                <div class="mu-pricing-single-title">
-                                                    <h3>Cloud Hosted</h3>
-                                                </div>
-                                                <div class="mu-pricing-single-content">
-                                                    <ul>
-                                                        <li>99.9% uptime</li>
-                                                        <li>24/7 Support</li>
-                                                        <li>Automaticly updated</li>
-                                                        <li>Customisable/No Branding</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="mu-single-pricebox">
-                                                    <h4><span>from</span>£9.99</h4>
-
-                                                </div>
-                                                <a class="mu-buy-now-btn" href="mailto:shaun@laratasks.co.uk">Buy now</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="mu-pricing-single">
-                                                <div class="mu-pricing-single-icon">
-                                                    <span class="fa fa-paper-plane"></span>
-                                                </div>
-                                                <div class="mu-pricing-single-title">
-                                                    <h3>Bespoke</h3>
-                                                </div>
-                                                <div class="mu-pricing-single-content">
-                                                    <ul>
-                                                        <li>Custom Website built</li>
-                                                        <li>Customisable/No Branding</li>
-                                                        <li>24/7 VIP Support</li>
-                                                        <li>Hosted by you or hosted by us</li>
-                                                    </ul>
-                                                </div>
-                                                {{--<div class="mu-single-pricebox">--}}
-                                                    {{--<h4>229$<span>/month</span></h4>--}}
-                                                {{--</div>--}}
-                                                <a class="mu-buy-now-btn" href="mailto:shaun@laratasks.co.uk">Contact Me</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
     <section id="mu-contact">
         <div class="container">
             <div class="row">
@@ -363,7 +269,7 @@
                             <span class="mu-title-dot"></span>
                         </div>
 
-                        <h3 style="text-align: center">Email: <a href="mailto:shaun@laratasks.co.uk">shaun@laratasks.co.uk</a></h3>
+                        <h3 style="text-align: center">Email: <a href="shaun@laratasks.co.uk">shaun@laratasks.co.uk</a></h3>
 
                     </div>
                 </div>
